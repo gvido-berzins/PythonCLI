@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pythoncli"
+version = "0.1.0"
+description = "Python CLI scripts."
+authors = ["gvido-berzins <gvido.berzins@syberu.xyz>"]
+
+[tool.poetry.scripts]
+pcli-archive-view = "pythoncli.archive_view:patched_main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-mpv = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.8.0"
+flake8 = "^5.0.4"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
