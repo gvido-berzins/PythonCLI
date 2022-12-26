@@ -5,7 +5,9 @@ description = "Python CLI scripts."
 authors = ["gvido-berzins <gvido.berzins@syberu.xyz>"]
 
 [tool.poetry.scripts]
+pcli-test = "pythoncli.pcli_test:main"
 pcli-archive-view = "pythoncli.archive_view:patched_main"
+pcli-dedupe-lines = "pythoncli.dedupe_lines:main"
 
 [tool.poetry.dependencies]
 python = "^3.9"
